@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('https://example.com/food-background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        header nav ul {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #FFD700;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 10px;
+        }
+
+        #menu-items .menu-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        #menu-items .menu-item h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#payment">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>French Castles 😋 :)</h1>
+        <h2> 🧀 Welcome to Our Castles 🍕 🥪</h2>
+        <p>Enjoy delicious meals and great service!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div id="menu-items">
+            <div class="menu-item">
+                <h3>Margherita Pizza</h3>
+                <p>A classic delight with mozzarella cheese and tomato sauce.</p>
+                <p><strong>Price:</strong> ₹129</p>
+            </div>
+            <div class="menu-item">
+                <h3>Grilled Chicken Salad</h3>
+                <p>Fresh greens topped with grilled chicken, served with a tangy dressing.</p>
+                <p><strong>Price:</strong> ₹299</p>
+            </div>
+            <div class="menu-item">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Classic Italian pasta dish made with creamy sauce and crispy bacon.</p>
+                <p><strong>Price:</strong> ₹199</p>
+            </div>
+            <div class="menu-item">
+                <h3>Sushi Platter</h3>
+                <p>A variety of fresh sushi rolls and sashimi.</p>
+                <p><strong>Price:</strong> ₹199</p>
+            </div>
+            <div class="menu-item">
+                <h3>Vegan Buddha Bowl</h3>
+                <p>A healthy mix of quinoa, roasted vegetables, and avocado.</p>
+                <p><strong>Price:</strong> ₹199</p>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ Ribs</h3>
+                <p>Slow-cooked ribs glazed with a smoky barbecue sauce.</p>
+                <p><strong>Price:</strong> ₹179</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+                <p><strong>Price:</strong> ₹89</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book a Table</h2>
+        <form id="booking-form" style="max-width: 400px; margin: auto;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="offers">
+        <h2>Special Offers</h2>
+        <p>Check out our daily specials and discounts!</p>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form id="feedback-form" style="max-width: 400px; margin: auto;">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="payment">
+        <h2>Payment</h2>
+        <form id="payment-form" style="max-width: 400px; margin: auto;">
+            <label for="card-name">Cardholder Name:</label>
+            <input type="text" id="card-name" name="card-name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required maxlength="16">
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="month" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" required maxlength="3">
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
